@@ -19,7 +19,7 @@ def image_to_canny(pil_img):
     image = np.array(pil_img)
     image = cv2.resize(image, (512, 512))
     gray = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
-    edges = cv2.Canny(gray, 150, 250)
+    edges = cv2.Canny(gray, 100, 200)
     canny_image = cv2.cvtColor(edges, cv2.COLOR_GRAY2RGB)
     return Image.fromarray(canny_image)
  
