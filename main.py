@@ -37,7 +37,7 @@ st.title("Welcome to image converter")
  
 openai.api_key = st.secrets['OPENAI_API_KEY']
 mode=st.selectbox('What you want',['Select Mode','text to image','image to image'])
- 
+
 if mode == 'text to image':
         # Function to generate image
     def generate_image(prompt: str, style: str,image_size: str):
