@@ -1,0 +1,13 @@
+streamlit
+torch
+diffusers
+transformers
+accelerate
+controlnet_aux
+opencv-python
+Pillow
+xformers
+langchain
+langsmith
+dotenv
+openai == 1.76.2
